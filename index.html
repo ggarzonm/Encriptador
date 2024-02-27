@@ -1,0 +1,50 @@
+<!doctype html>
+<html html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	
+	
+	<title>Alura Challenge 1- Encriptador</title>
+</head>
+	<body>
+		<header class="logo">
+					<h1><img src="imagenes/Logo.png" width="120" height="48" alt="Logo de Alura">Encriptador</h1>
+		</header>
+		<main class="container">
+			
+
+		  	<div class="left">
+				<!--<input type="text" class="textInput" id="inputTexto" placeholder="Ingrese el texto aquí">-->
+				<textarea class="textInput" id="inputTexto" placeholder="Ingrese el texto aquí"></textarea>
+			</div>
+		
+
+			<div class="right">
+				<img src="imagenes/Muñeco.png" alt="imagen de busqueda" class="imgR" id="imag">
+              <p class="imgR" id="textoimg">Ningún mensaje fue encontrado</p>
+              <textarea name="textoSalida" cols="50" rows="10" class="textoCaja" id="output" placeholder="Ingrese el texto que desee encriptar o desencriptar"></textarea>
+				<button type="button" id="btnCopiar" onclick="copiar()">Copiar</button>
+			</div>
+
+		  	<div class="leftButton">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/></svg> Solo letras minúsculas y sin acentos</p>
+				<button type="button" class="boton" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+				<button type="button" class="boton" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+		
+			</div>
+
+			
+		</main>
+
+		<footer>
+			<p>Desarrollado por Gabriel Garzón</p>
+		</footer>
+			<script src="app.js"></script>
+	</body>
+	
+</html>
